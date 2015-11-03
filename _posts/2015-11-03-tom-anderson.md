@@ -3,11 +3,11 @@ inFeed: true
 hasPage: true
 inNav: false
 inLanguage: null
-starred: false
+starred: true
 keywords: []
 description: ''
-datePublished: '2015-11-03T03:09:25.816Z'
-dateModified: '2015-11-03T03:09:12.971Z'
+datePublished: '2015-11-03T03:10:13.575Z'
+dateModified: '2015-11-03T03:10:04.060Z'
 title: Tom Anderson
 authors: []
 publisher:
