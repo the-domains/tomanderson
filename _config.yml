@@ -2,12 +2,13 @@ name: TomAnderson
 favicon: null
 layout_spectrum: 1
 typography_spectrum: 0.88716
+title: Tom Anderson
 cta:
   domain: null
   bucket: null
   version: null
 analytics:
-  google: null
+  google: UA-69607934-1
   facebook: null
   twitter: null
 opengraph:
