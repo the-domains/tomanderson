@@ -1,4 +1,4 @@
-<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>TomAnderson</title><link href="../rss.xml" title="Tom Anderson feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.16.25"><meta name="the-grid-solution" content="d6a10a2b-8e50-46a0-b9c4-b90b67c45dd7"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
+<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>TomAnderson</title><link href="../rss.xml" title="Tom Anderson feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.17.3"><meta name="the-grid-solution" content="96974579-200e-4c74-9f67-f6a1fa8b54d9"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
 @media (min-width: 15.6875em)and (max-width: 15.75em){	html{font-size:3.28125em !important}}
 @media (min-width: 15.8125em)and (max-width: 16.25em){	html{font-size:3.375em !important}}
 @media (min-width: 16.3125em)and (max-width: 16.6875em){html{font-size:3.46875em !important}}
@@ -202,6 +202,14 @@ body {
 }
 .stack {
   z-index: 1;
+  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+}
+.group,
+.aside,
+.decoration {
+  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
 }
 picture {
   display: inline-block;
@@ -250,6 +258,9 @@ a:active {
   transition: color 0.1s ease-in, background-color 0.1s ease-out;
   -webkit-transition: color 0.1s ease-in, background-color 0.1s ease-out;
 }
+a.aside {
+  display: inline-block;
+}
 html.exporting a {
   transition: none;
 }
@@ -259,11 +270,21 @@ html.exporting a {
 .media > a {
   display: inline-block;
 }
+.media iframe {
+  transition: 0.3s opacity ease-in;
+  -webkit-transition: 0.3s opacity ease-in;
+}
 h1 a,
 h2 a,
 h3 a {
   font-weight: inherit;
   letter-spacing: inherit;
+}
+a {
+  -webkit-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .text-decoration {
   -webkit-box-decoration-break: clone;
@@ -277,36 +298,50 @@ h3 a {
   margin-left: 1.5em;
 }
 .decoration {
-  position: relative;
   pointer-events: none;
+}
+.svg {
+  position: relative;
   background-color: currentColor;
 }
-.decoration > svg {
+.svg > svg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.decoration.connector > svg {
+.svg.connector > svg {
   width: 109%;
   height: 109%;
   margin-left: -2%;
 }
-.decoration path,
-.decoration ellipse,
-.decoration rect,
-.decoration polygon,
-.decoration circle {
+.svg path,
+.svg ellipse,
+.svg rect,
+.svg polygon,
+.svg circle {
   fill: currentColor;
 }
-.decoration mpath,
-.decoration line,
-.decoration polyline {
+.svg mpath,
+.svg line,
+.svg polyline {
   stroke: currentColor;
 }
-.svg.decoration {
+.svg {
   background-color: transparent;
+}
+.revealed .play.svg:after {
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-color: currentColor;
+  content: "";
 }
 .colors-style-aside-border .publisher,
 .colors-style-aside-border .author {
@@ -1077,7 +1112,7 @@ wbr.w1800{ display: block }
  #u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one-3 {
 display: none;
 }
-}</style></head><body><div class="layout-system rust mobile" id="page-e6ee8803-ebff-4eae-87be-e344839534c2"><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_long_paragraph w_long_text w_medium_paragraph w_medium_text layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-mobile-l-one-3-l-one"></div><style id="u-e6ee8803-ebff-4eae-87be-e344839534c2-color">body{background-color: rgba(40, 39, 31, 1)}</style></section><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-nav" itemtype="nav" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-nav"><div kind="group" index="heading" class="group heading group heading" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-nav-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-nav-g-heading-t-headline"><a class="text-decoration" href="../index.html" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-nav-g-heading-t-headline-a">Tom Anderson</a></h1></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_large chapter stack column i first_chapter w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="5706c991-625d-4b68-a1f1-003fcba6dbab" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-5706c991-625d-4b68-a1f1-003fcba6dbab"><div kind="group" index="column" class="group column group column" id="u-5706c991-625d-4b68-a1f1-003fcba6dbab-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-5706c991-625d-4b68-a1f1-003fcba6dbab-g-column-t-paragraph"><p><span class="first-letter">D</span><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>id you notice that NBNCo has it's own <wbr class="w480 w960"></wbr>definition of "non-metropolitan" <wbr class="w481 w961 w1799"></wbr>that does not <wbr class="w480 w960"></wbr>comply with <wbr class="w1800"></wbr>the legal definitions for planning? </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>"</span>'Metropolitan Adelaide' is a geographic area legally <wbr class="w480 w960"></wbr>defined by a declaration <wbr class="w1799"></wbr>by <wbr class="w481 w961"></wbr>the Minister responsible <wbr class="w480 w960 w1800"></wbr>for planning and development matters (under <wbr class="w480 w960 w1799"></wbr>section <wbr class="w481 w961"></wbr>4 of the Development Act 1993). The most <wbr class="w480 w960"></wbr>recent <wbr class="w1800"></wbr>declaration was <wbr class="w1799"></wbr>made on 11 <wbr class="w481 w961"></wbr>November 1993... <wbr class="w480 w960"></wbr>East: through the Adelaide Hills, east of the <wbr class="w1799"></wbr>towns of <wbr class="w480 w481 w960 w961 w1800"></wbr>Bridgewater and One Tree Hill." Adelaide <wbr class="w480 w960"></wbr>metropolitan area extends <wbr class="w1799"></wbr>through <wbr class="w481 w961"></wbr>the hills to (but <wbr class="w480 w960"></wbr>not <wbr class="w1800"></wbr>including) Mount Barker. <a href="http://www.atlas.sa.gov.au/resources/metropolitan-adelaide-boundary">atlas.sa.gov.au/re..</a> <wbr class="w480 w960 w1799"></wbr>pursuant to <wbr class="w481 w961"></wbr>Development Act 1993 <a href="http://www.atlas.sa.gov.au/files/metro_Adelaide_bnd.pdf"><wbr class="w480 w960"></wbr>atlas.sa.gov.au/fi..</a> </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_medium_paragraph w_medium_text stack column" itemid="5c15464b-1272-4739-ab8a-7c184c10e096" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-5c15464b-1272-4739-ab8a-7c184c10e096"><div kind="group" index="column" class="group column group column" id="u-5c15464b-1272-4739-ab8a-7c184c10e096-g-column"><div kind="text" index="paragraph" class="text-decoration medium medium_paragraph medium_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-5c15464b-1272-4739-ab8a-7c184c10e096-g-column-t-paragraph"><p><span class="first-letter">L</span>ooking at Stirling and doubtless other <wbr class="w480 w960"></wbr>"metropolitan" areas, NBNCo <wbr class="w481 w961 w1799"></wbr>designates these areas <wbr class="w480 w960"></wbr>as "non-<wbr class="w1800"></wbr>metropolitan". Seems like they can override <wbr class="w480 w481 w960 w961 w1799"></wbr>legal definitions now. Sure makes for fancy <wbr class="w480 w960"></wbr>accounting <wbr class="w1800"></wbr>tricks though! <wbr class="w481 w961 w1799"></wbr>Throwing the harder to <wbr class="w480 w960"></wbr>deal with into the rural basket will hide the cost <wbr class="w480 w481 w960 w961 w1799"></wbr>overruns. They <wbr class="w1800"></wbr>might as well. Is there no external <wbr class="w480 w960"></wbr>accounting? </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="2ac00669-7b27-4c2e-9b27-7f11e2c2d42c" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-2ac00669-7b27-4c2e-9b27-7f11e2c2d42c"><div kind="group" index="column" class="group column group column" id="u-2ac00669-7b27-4c2e-9b27-7f11e2c2d42c-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-2ac00669-7b27-4c2e-9b27-7f11e2c2d42c-g-column-t-paragraph"><p><span class="first-letter"> </span>I should note that "Adelaide Hills" is considered <wbr class="w480 w960"></wbr>outside Adelaide <wbr class="w1799"></wbr>Metropolitan <wbr class="w481 w961"></wbr>region according to <wbr class="w480 w960 w1800"></wbr>some <a href="http://sa.gov.au">sa.gov.au</a> websites, for whatever <wbr class="w1799"></wbr>reason. But I <wbr class="w480 w960"></wbr>could <wbr class="w481 w961"></wbr>not find any legal designations, only informal <wbr class="w480 w960 w1800"></wbr>ones. On the <wbr class="w1799"></wbr>other hand, <a href="http://abs.gov.au"><wbr class="w481 w961"></wbr>abs.gov.au</a> explicitly states <wbr class="w480 w960"></wbr>"The ABS does not define <wbr class="w1799"></wbr>Metropolitan and non-<wbr class="w480 w481 w960 w961 w1800"></wbr>Metropolitan areas." <a href="http://www.abs.gov.au/websitedbs/D3310114.nsf/home/Frequently+Asked+Questions#Anchor8">abs.gov.au/website..</a> But the <wbr class="w480 w960 w1799"></wbr>Capital City Statistical <wbr class="w481 w961"></wbr>Division for Adelaide includes <wbr class="w480 w960"></wbr>all <wbr class="w1800"></wbr>of the legal definition <wbr class="w1799"></wbr>with the addition of <wbr class="w481 w961"></wbr>Mount <wbr class="w480 w960"></wbr>Barker. Here's the map: <a href="http://betaworks.abs.gov.au/betaworks/betaworks.nsf/projects/ASGSBoundariesOnline/ASGSBoundariesOnline/index.html?xmin=15340065.250162382&ymin=-4215028.066628151&xmax=15596435.043030962&ymax=-4103888.6275014617&toplayer=GCCSA">betaworks.abs.gov...</a></p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="d63afc9c-b8ca-4f6c-8856-27fe7af68525" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-d63afc9c-b8ca-4f6c-8856-27fe7af68525"><div kind="group" index="column" class="group column group column" id="u-d63afc9c-b8ca-4f6c-8856-27fe7af68525-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-d63afc9c-b8ca-4f6c-8856-27fe7af68525-g-column-t-paragraph"><p><span class="first-letter"> </span>Gawler is "non-metropolitan" but within the <wbr class="w480 w960"></wbr>"metropolitan" legally defined <wbr class="w481 w961 w1799"></wbr>area. <a href="http://www.mynbn.info/sa/5GNG"><wbr class="w480 w960"></wbr>mynbn.info/sa/5GNG</a> <br><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Lenswood is in Metropolitan area I noted above, but <wbr class="w480 w960"></wbr>"non-metropolitan" <a href="http://www.mynbn.info/sa/5LEN"><wbr class="w481 w961 w1799"></wbr>mynbn.info/sa/5LEN</a> <br><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Onkaparingam 2184 premises, designated "Non-<wbr class="w480 w960"></wbr>Metro" by NBN but within <wbr class="w481 w961 w1799"></wbr>"metropolitan" as above. <a href="http://www.mynbn.info/sa/5ONK"><wbr class="w480 w960 w1800"></wbr>mynbn.info/sa/5ONK</a> <br><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Stirling has 9390 premises, but is also considered <wbr class="w480 w960"></wbr>"non-metropolitan". <a href="http://www.mynbn.info/sa/5STI"><wbr class="w481 w961 w1799"></wbr>mynbn.info/sa/5STI</a></p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>M</span>ount Barker has 12,047 premises. It's barely outside <wbr class="w480 w960"></wbr>the Adelaide <wbr class="w481 w1799"></wbr>metropolitan <wbr class="w961"></wbr>area as defined above, <wbr class="w1800"></wbr>but <wbr class="w480 w960"></wbr>large towns are apparently "non-<wbr class="w481 w1799"></wbr>metropolitan". <a href="http://www.mynbn.info/sa/5MTB"><wbr class="w480 w960 w961"></wbr>mynbn.info/sa/5MTB</a> <br><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Mount Gambier is also a considered a major town in <wbr class="w480 w960"></wbr>South Australia. It's well <wbr class="w481 w961 w1799"></wbr>away from the Adelaide <wbr class="w480 w960 w1800"></wbr>metropolitan area by whatever definition, and <wbr class="w480 w481 w960 w1799"></wbr>projected <wbr class="w961"></wbr>over 16000 premises. <a href="http://www.mynbn.info/sa/5MTG"><wbr class="w480 w960"></wbr>mynbn.info/sa/5MTG</a> </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i last_chapter w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="1607344c-f760-4b0d-87ab-61844b3c4762" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-1607344c-f760-4b0d-87ab-61844b3c4762"><div kind="group" index="column" class="group column group column" id="u-1607344c-f760-4b0d-87ab-61844b3c4762-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-1607344c-f760-4b0d-87ab-61844b3c4762-g-column-t-paragraph"><p><span class="first-letter"> </span>On another note, most metropolitan areas are <wbr class="w480 w960"></wbr>designated "metropolitan", but <wbr class="w1799"></wbr>I <wbr class="w481 w961"></wbr>see at least three <wbr class="w480 w960"></wbr>areas, <wbr class="w1800"></wbr>Henley Beach, Gepps Cross and Golden <wbr class="w480"></wbr>Grove, <wbr class="w960"></wbr>show <wbr class="w481 w1799"></wbr>up <wbr class="w961"></wbr>as neither "metropolitan" nor "non-<wbr class="w480 w960 w1800"></wbr>metropolitan". In the database they are <wbr class="w481 w961 w1799"></wbr>"Metro". Is <wbr class="w480 w960"></wbr>someone typing these in manually? (NBN database <wbr class="w480 w960 w1800"></wbr>skills are <wbr class="w481 w961 w1799"></wbr>wretched. This is not the first big error I've <wbr class="w480 w960"></wbr>seen. They changed their <wbr class="w1799"></wbr>database <wbr class="w481 w961"></wbr>after Libs took <wbr class="w1800"></wbr>it <wbr class="w480 w960"></wbr>over, and lost data along the way, my address no <wbr class="w480 w960 w1799"></wbr>longer <wbr class="w481 w961"></wbr>existing!) Sure hope nobody is generating <wbr class="w480 w960 w1800"></wbr>reports using a search like <wbr class="w1799"></wbr>"SELECT <wbr class="w481 w961"></wbr>area FROM <wbr class="w480 w960"></wbr>nbncrapdb WHERE designation = 'metropolitan'" -- <wbr class="w480 w960 w1799 w1800"></wbr>that's going to <wbr class="w481 w961"></wbr>miss and undercount those <wbr class="w480 w960"></wbr>designated 'Metro'. If you know <wbr class="w1799"></wbr>anything about <wbr class="w480 w481 w960 w961"></wbr>computers, <wbr class="w1800"></wbr>when you notice several problems in a <wbr class="w480 w960"></wbr>given <wbr class="w1799"></wbr>system, there are <wbr class="w481 w961"></wbr>invariably many more. <a href="http://www.mynbn.info/sa/5HNL"><wbr class="w480 w960 w1800"></wbr>mynbn.info/sa/5HNL</a> <a href="http://www.mynbn.info/sa/5GPC"><wbr class="w1799"></wbr>mynbn.info/sa/5GPC</a> <a href="http://www.mynbn.info/sa/5GNG"><wbr class="w480 w481 w960 w961"></wbr>mynbn.info/sa/5GNG</a></p></div></div></article><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-alternate-g-heading-t-headline-a">Tom Anderson feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_long_paragraph w_long_text w_medium_paragraph w_medium_text layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one-3-l-one"></div><style id="u-e6ee8803-ebff-4eae-87be-e344839534c2-color">body{background-color: rgba(40, 39, 31, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_long_paragraph w_long_text w_medium_paragraph w_medium_text layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-cinema-l-one-3-l-one"></div><style id="u-e6ee8803-ebff-4eae-87be-e344839534c2-color">body{background-color: rgba(40, 39, 31, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+}</style></head><body><div class="layout-system rust mobile" id="page-e6ee8803-ebff-4eae-87be-e344839534c2"><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_long_paragraph w_long_text w_medium_paragraph w_medium_text layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-mobile-l-one-3-l-one"></div><style id="u-e6ee8803-ebff-4eae-87be-e344839534c2-color">body{background-color: rgba(40, 39, 31, 1)}</style></section><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-nav" itemtype="nav" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-nav"><div kind="group" index="heading" class="group heading group heading" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-nav-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-nav-g-heading-t-headline"><a class="text-decoration" href="../index.html" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-nav-g-heading-t-headline-a">Tom Anderson</a></h1></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_large chapter stack column i first_chapter w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="5706c991-625d-4b68-a1f1-003fcba6dbab" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-5706c991-625d-4b68-a1f1-003fcba6dbab"><div kind="group" index="column" class="group column group column" id="u-5706c991-625d-4b68-a1f1-003fcba6dbab-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-5706c991-625d-4b68-a1f1-003fcba6dbab-g-column-t-paragraph"><p><span class="first-letter">D</span><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>id you notice that NBNCo has it's own <wbr class="w480 w960"></wbr>definition of "non-metropolitan" <wbr class="w481 w961 w1799"></wbr>that does not <wbr class="w480 w960"></wbr>comply with <wbr class="w1800"></wbr>the legal definitions for planning? </p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>"</span>'Metropolitan Adelaide' is a geographic area legally <wbr class="w480 w960"></wbr>defined by a declaration <wbr class="w1799"></wbr>by <wbr class="w481 w961"></wbr>the Minister responsible <wbr class="w480 w960 w1800"></wbr>for planning and development matters (under <wbr class="w480 w960 w1799"></wbr>section <wbr class="w481 w961"></wbr>4 of the Development Act 1993). The most <wbr class="w480 w960"></wbr>recent <wbr class="w1800"></wbr>declaration was <wbr class="w1799"></wbr>made on 11 <wbr class="w481 w961"></wbr>November 1993... <wbr class="w480 w960"></wbr>East: through the Adelaide Hills, east of the <wbr class="w1799"></wbr>towns of <wbr class="w480 w481 w960 w961 w1800"></wbr>Bridgewater and One Tree Hill." Adelaide <wbr class="w480 w960"></wbr>metropolitan area extends <wbr class="w1799"></wbr>through <wbr class="w481 w961"></wbr>the hills to (but <wbr class="w480 w960"></wbr>not <wbr class="w1800"></wbr>including) Mount Barker. <a href="http://www.atlas.sa.gov.au/resources/metropolitan-adelaide-boundary">atlas.sa.gov.au/re..</a> <wbr class="w480 w960 w1799"></wbr>pursuant to <wbr class="w481 w961"></wbr>Development Act 1993 <a href="http://www.atlas.sa.gov.au/files/metro_Adelaide_bnd.pdf"><wbr class="w480 w960"></wbr>atlas.sa.gov.au/fi..</a> </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_medium_paragraph w_medium_text stack column" itemid="5c15464b-1272-4739-ab8a-7c184c10e096" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-5c15464b-1272-4739-ab8a-7c184c10e096"><div kind="group" index="column" class="group column group column" id="u-5c15464b-1272-4739-ab8a-7c184c10e096-g-column"><div kind="text" index="paragraph" class="text-decoration medium medium_paragraph medium_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-5c15464b-1272-4739-ab8a-7c184c10e096-g-column-t-paragraph"><p><span class="first-letter">L</span>ooking at Stirling and doubtless other <wbr class="w480 w960"></wbr>"metropolitan" areas, NBNCo <wbr class="w481 w961 w1799"></wbr>designates these areas <wbr class="w480 w960"></wbr>as "non-<wbr class="w1800"></wbr>metropolitan". Seems like they can override <wbr class="w480 w481 w960 w961 w1799"></wbr>legal definitions now. Sure makes for fancy <wbr class="w480 w960"></wbr>accounting <wbr class="w1800"></wbr>tricks though! <wbr class="w481 w961 w1799"></wbr>Throwing the harder to <wbr class="w480 w960"></wbr>deal with into the rural basket will hide the cost <wbr class="w480 w481 w960 w961 w1799"></wbr>overruns. They <wbr class="w1800"></wbr>might as well. Is there no external <wbr class="w480 w960"></wbr>accounting? </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="2ac00669-7b27-4c2e-9b27-7f11e2c2d42c" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-2ac00669-7b27-4c2e-9b27-7f11e2c2d42c"><div kind="group" index="column" class="group column group column" id="u-2ac00669-7b27-4c2e-9b27-7f11e2c2d42c-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-2ac00669-7b27-4c2e-9b27-7f11e2c2d42c-g-column-t-paragraph"><p><span class="first-letter"> </span>I should note that "Adelaide Hills" is considered <wbr class="w480 w960"></wbr>outside Adelaide <wbr class="w1799"></wbr>Metropolitan <wbr class="w481 w961"></wbr>region according to <wbr class="w480 w960 w1800"></wbr>some <a href="http://sa.gov.au">sa.gov.au</a> websites, for whatever <wbr class="w1799"></wbr>reason. But I <wbr class="w480 w960"></wbr>could <wbr class="w481 w961"></wbr>not find any legal designations, only informal <wbr class="w480 w960 w1800"></wbr>ones. On the <wbr class="w1799"></wbr>other hand, <a href="http://abs.gov.au"><wbr class="w481 w961"></wbr>abs.gov.au</a> explicitly states <wbr class="w480 w960"></wbr>"The ABS does not define <wbr class="w1799"></wbr>Metropolitan and non-<wbr class="w480 w481 w960 w961 w1800"></wbr>Metropolitan areas." <a href="http://www.abs.gov.au/websitedbs/D3310114.nsf/home/Frequently+Asked+Questions#Anchor8">abs.gov.au/website..</a> But the <wbr class="w480 w960 w1799"></wbr>Capital City Statistical <wbr class="w481 w961"></wbr>Division for Adelaide includes <wbr class="w480 w960"></wbr>all <wbr class="w1800"></wbr>of the legal definition <wbr class="w1799"></wbr>with the addition of <wbr class="w481 w961"></wbr>Mount <wbr class="w480 w960"></wbr>Barker. Here's the map: <a href="http://betaworks.abs.gov.au/betaworks/betaworks.nsf/projects/ASGSBoundariesOnline/ASGSBoundariesOnline/index.html?xmin=15340065.250162382&ymin=-4215028.066628151&xmax=15596435.043030962&ymax=-4103888.6275014617&toplayer=GCCSA">betaworks.abs.gov...</a></p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="d63afc9c-b8ca-4f6c-8856-27fe7af68525" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-d63afc9c-b8ca-4f6c-8856-27fe7af68525"><div kind="group" index="column" class="group column group column" id="u-d63afc9c-b8ca-4f6c-8856-27fe7af68525-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-d63afc9c-b8ca-4f6c-8856-27fe7af68525-g-column-t-paragraph"><p><span class="first-letter"> </span>Gawler is "non-metropolitan" but within the <wbr class="w480 w960"></wbr>"metropolitan" legally defined <wbr class="w481 w961 w1799"></wbr>area. <a href="http://www.mynbn.info/sa/5GNG"><wbr class="w480 w960"></wbr>mynbn.info/sa/5GNG</a> <br><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Lenswood is in Metropolitan area I noted above, but <wbr class="w480 w960"></wbr>"non-metropolitan" <a href="http://www.mynbn.info/sa/5LEN"><wbr class="w481 w961 w1799"></wbr>mynbn.info/sa/5LEN</a> <br><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Onkaparingam 2184 premises, designated "Non-<wbr class="w480 w960"></wbr>Metro" by NBN but within <wbr class="w481 w961 w1799"></wbr>"metropolitan" as above. <a href="http://www.mynbn.info/sa/5ONK"><wbr class="w480 w960 w1800"></wbr>mynbn.info/sa/5ONK</a> <br><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Stirling has 9390 premises, but is also considered <wbr class="w480 w960"></wbr>"non-metropolitan". <a href="http://www.mynbn.info/sa/5STI"><wbr class="w481 w961 w1799"></wbr>mynbn.info/sa/5STI</a></p><p><span class="first-letter"><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>M</span>ount Barker has 12,047 premises. It's barely outside <wbr class="w480 w960"></wbr>the Adelaide <wbr class="w481 w1799"></wbr>metropolitan <wbr class="w961"></wbr>area as defined above, <wbr class="w1800"></wbr>but <wbr class="w480 w960"></wbr>large towns are apparently "non-<wbr class="w481 w1799"></wbr>metropolitan". <a href="http://www.mynbn.info/sa/5MTB"><wbr class="w480 w960 w961"></wbr>mynbn.info/sa/5MTB</a> <br><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Mount Gambier is also a considered a major town in <wbr class="w480 w960"></wbr>South Australia. It's well <wbr class="w481 w961 w1799"></wbr>away from the Adelaide <wbr class="w480 w960 w1800"></wbr>metropolitan area by whatever definition, and <wbr class="w480 w481 w960 w1799"></wbr>projected <wbr class="w961"></wbr>over 16000 premises. <a href="http://www.mynbn.info/sa/5MTG"><wbr class="w480 w960"></wbr>mynbn.info/sa/5MTG</a> </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch uninverted vertical collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i last_chapter w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="1607344c-f760-4b0d-87ab-61844b3c4762" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-1607344c-f760-4b0d-87ab-61844b3c4762"><div kind="group" index="column" class="group column group column" id="u-1607344c-f760-4b0d-87ab-61844b3c4762-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-1607344c-f760-4b0d-87ab-61844b3c4762-g-column-t-paragraph"><p><span class="first-letter"> </span>On another note, most metropolitan areas are <wbr class="w480 w960"></wbr>designated "metropolitan", but <wbr class="w1799"></wbr>I <wbr class="w481 w961"></wbr>see at least three <wbr class="w480 w960"></wbr>areas, <wbr class="w1800"></wbr>Henley Beach, Gepps Cross and Golden <wbr class="w480"></wbr>Grove, <wbr class="w960"></wbr>show <wbr class="w481 w1799"></wbr>up <wbr class="w961"></wbr>as neither "metropolitan" nor "non-<wbr class="w480 w960 w1800"></wbr>metropolitan". In the database they are <wbr class="w481 w961 w1799"></wbr>"Metro". Is <wbr class="w480 w960"></wbr>someone typing these in manually? (NBN database <wbr class="w480 w960 w1800"></wbr>skills are <wbr class="w481 w961 w1799"></wbr>wretched. This is not the first big error I've <wbr class="w480 w960"></wbr>seen. They changed their <wbr class="w1799"></wbr>database <wbr class="w481 w961"></wbr>after Libs took <wbr class="w1800"></wbr>it <wbr class="w480 w960"></wbr>over, and lost data along the way, my address no <wbr class="w480 w960 w1799"></wbr>longer <wbr class="w481 w961"></wbr>existing!) Sure hope nobody is generating <wbr class="w480 w960 w1800"></wbr>reports using a search like <wbr class="w1799"></wbr>"SELECT <wbr class="w481 w961"></wbr>area FROM <wbr class="w480 w960"></wbr>nbncrapdb WHERE designation = 'metropolitan'" -- <wbr class="w480 w960 w1799 w1800"></wbr>that's going to <wbr class="w481 w961"></wbr>miss and undercount those <wbr class="w480 w960"></wbr>designated 'Metro'. If you know <wbr class="w1799"></wbr>anything about <wbr class="w480 w481 w960 w961"></wbr>computers, <wbr class="w1800"></wbr>when you notice several problems in a <wbr class="w480 w960"></wbr>given <wbr class="w1799"></wbr>system, there are <wbr class="w481 w961"></wbr>invariably many more. <a href="http://www.mynbn.info/sa/5HNL"><wbr class="w480 w960 w1800"></wbr>mynbn.info/sa/5HNL</a> <a href="http://www.mynbn.info/sa/5GPC"><wbr class="w1799"></wbr>mynbn.info/sa/5GPC</a> <a href="http://www.mynbn.info/sa/5GNG"><wbr class="w480 w481 w960 w961"></wbr>mynbn.info/sa/5GNG</a></p></div></div></article><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-alternate-g-heading-t-headline-a">Tom Anderson feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_long_paragraph w_long_text w_medium_paragraph w_medium_text layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-desktop-l-one-3-l-one"></div><style id="u-e6ee8803-ebff-4eae-87be-e344839534c2-color">body{background-color: rgba(40, 39, 31, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_long_paragraph w_long_text w_medium_paragraph w_medium_text layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-e6ee8803-ebff-4eae-87be-e344839534c2-cinema-l-one-3-l-one"></div><style id="u-e6ee8803-ebff-4eae-87be-e344839534c2-color">body{background-color: rgba(40, 39, 31, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*! Hammer.JS - v1.1.3 - 2014-05-20
  * http://eightmedia.github.io/hammer.js
  *
@@ -1604,9 +1639,11 @@ global.Hamburger = require('./hamburger');
 
 global.Highlighter = require('./highlighter');
 
+global.Player = require('./player');
+
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./animator":3,"./hamburger":4,"./highlighter":5,"./paginator":7,"hammerjs/hammer.min.js":1,"picturefill/dist/picturefill.min.js":2}],7:[function(require,module,exports){
+},{"./animator":3,"./hamburger":4,"./highlighter":5,"./paginator":7,"./player":8,"hammerjs/hammer.min.js":1,"picturefill/dist/picturefill.min.js":2}],7:[function(require,module,exports){
 var appendPage, mainpage, page, ref, ref1, urls;
 
 page = require('./reflow');
@@ -1707,7 +1744,192 @@ module.exports = function() {
 };
 
 
-},{"./reflow":8}],8:[function(require,module,exports){
+},{"./reflow":9}],8:[function(require,module,exports){
+var Player, Youtube, iframe, revealed, rgb2hex;
+
+iframe = null;
+
+Youtube = null;
+
+Player = function(id, src, width, height, color, bg) {
+  if (src.indexOf('youtube') > -1) {
+    src += '&color=white&theme=light&modestbranding=1';
+  }
+  src = src.replace('COLOR', color).replace('BG', bg);
+  if (location.protocol !== 'https:') {
+    src = src.replace('https:', 'http:');
+  }
+  iframe = document.createElement('iframe');
+  iframe.id = id;
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.src = src;
+  iframe.width = width;
+  iframe.height = height;
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  iframe.style.left = 0;
+  iframe.style.right = 0;
+  iframe.style.position = 'absolute';
+  iframe.style.opacity = 0.2;
+  iframe.onload = function() {
+    return iframe.style.opacity = 1;
+  };
+  return iframe;
+};
+
+revealed = null;
+
+Player.reveal = function(iframe) {
+  var diff, i, left, len, parent, play, ref, ref1, sibling, target, top, translateX, translateY;
+  while (target = (target || iframe).parentNode) {
+    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
+      if (target.parentNode.classList.contains('group')) {
+        parent = target.parentNode;
+      } else {
+        parent = target;
+      }
+      revealed = iframe;
+      play = parent.getElementsByClassName('play')[0];
+      left = target.offsetWidth - play.offsetLeft - play.offsetWidth;
+      top = -play.offsetTop;
+      play.style.webkitTransformOrigin = 'top right';
+      play.style.webkitTransform = 'translateX(' + left + 'px) translateY(' + top + 'px) scale(0.5)';
+      target.classList.add('revealed');
+      ref1 = parent.parentNode.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        sibling = ref1[i];
+        if (sibling.nodeType === 1 && sibling !== parent) {
+          translateX = translateY = null;
+          if ((diff = sibling.offsetLeft + sibling.offsetWidth - parent.offsetLeft) > 2 && parent.offsetLeft >= sibling.offsetLeft) {
+            translateX = -diff;
+          }
+          if ((diff = target.offsetLeft + target.offsetWidth - sibling.offsetLeft) > 2 && parent.offsetLeft <= sibling.offsetLeft) {
+            if (!translateX || Math.abs(diff) < Math.abs(translateX)) {
+              translateX = diff;
+            }
+          }
+          if ((diff = sibling.offsetTop + sibling.offsetHeight - parent.offsetTop) > 2 && parent.offsetTop >= sibling.offsetTop) {
+            translateY = -diff;
+          }
+          if ((diff = target.offsetTop + target.offsetHeight - sibling.offsetTop) > 2 && parent.offsetTop <= sibling.offsetTop) {
+            if (!translateY || Math.abs(diff) < Math.abs(translateY)) {
+              translateY = diff;
+            }
+          }
+          if (Math.abs(translateX) > Math.abs(translateY)) {
+            sibling.style.webkitTransform = 'translateY(' + translateY + 'px)';
+          } else {
+            sibling.style.webkitTransform = 'translateX(' + translateX + 'px)';
+          }
+          console.log(translateX, translateY, sibling);
+        }
+      }
+    }
+  }
+};
+
+Player.hide = function(iframe) {
+  var i, len, parent, play, ref, ref1, sibling;
+  while (parent = (parent || iframe).parentNode) {
+    if ((ref = parent.classList) != null ? ref.contains('revealed') : void 0) {
+      parent.classList.remove('revealed');
+      if (parent.parentNode.classList.contains('group')) {
+        parent = parent.parentNode;
+      }
+      play = parent.getElementsByClassName('play')[0];
+      play.style.webkitTransform = '';
+      ref1 = parent.parentNode.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        sibling = ref1[i];
+        sibling.style.webkitTransform = '';
+      }
+    }
+  }
+  return revealed = null;
+};
+
+window.addEventListener('resize', function() {
+  return setTimeout(function() {
+    return requestAnimationFrame(function() {
+      if (revealed) {
+        if (revealed.offsetWidth) {
+          return Player.reveal(revealed);
+        } else {
+          return Player.stop(revealed);
+        }
+      }
+    });
+  }, 10);
+});
+
+Player.stop = function(iframe) {
+  var old;
+  old = iframe;
+  iframe.style.opacity = 0;
+  setTimeout(function() {
+    var ref;
+    return (ref = old.parentNode) != null ? ref.removeChild(old) : void 0;
+  }, 300);
+  Player.hide(iframe);
+  return iframe = null;
+};
+
+document.addEventListener('click', function(e) {
+  var bg, color, header, parent, play, ref, ref1, results, styles, target;
+  target = e.target;
+  results = [];
+  while (target) {
+    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
+      if (play = target.getElementsByClassName('play')[0]) {
+        if ((iframe != null ? iframe.parentNode : void 0) === target) {
+          Player.stop(iframe);
+        } else {
+          if (iframe) {
+            Player.stop(iframe);
+          }
+          color = bg = null;
+          header = (ref1 = target.parentNode.parentNode.getElementsByClassName('title')[0]) != null ? ref1.firstChild : void 0;
+          parent = header || play;
+          while (parent) {
+            if (parent.nodeType === 1) {
+              styles = window.getComputedStyle(parent);
+              if (styles.color.indexOf('rgba') === -1 || !styles.color.match(/,\s*0\)/)) {
+                if (color == null) {
+                  color = styles.color;
+                }
+              }
+              if (styles['background-color'].indexOf('rgba') === -1 || !styles['background-color'].match(/,\s*0\)/)) {
+                if (bg == null) {
+                  bg = styles['background-color'];
+                }
+              }
+            }
+            parent = parent.parentNode;
+          }
+          iframe = Player(play.id + '-player', play.getAttribute('data-src'), play.getAttribute('data-width'), play.getAttribute('data-height'), rgb2hex(color), rgb2hex(bg));
+          target.appendChild(iframe);
+          Player.reveal(iframe);
+        }
+        e.preventDefault();
+        break;
+      }
+    }
+    results.push(target = target.parentNode);
+  }
+  return results;
+});
+
+rgb2hex = function(rgb) {
+  rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+  if (rgb && rgb.length === 4) {
+    return ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2);
+  }
+};
+
+window.exports = window.Player = Player;
+
+
+},{}],9:[function(require,module,exports){
 module.exports = {
   reflow: function(container) {
     var counter, heights, hidden, hole, holed, holes, i, id, ids, index, j, k, l, last, layout, layouts, len, len1, len2, len3, m, mutations, name, node, ref, ref1, ref2, stack, stacks;
@@ -1972,7 +2194,7 @@ module.exports = function(callback) {
   } else {
     protocol = '';
   }
-  url = protocol + "//cdn.thegrid.io/gss/gss-document/1.2.4/gss.document.parser.js";
+  url = protocol + "//cdn.thegrid.io/gss/gss-document/1.2.8/gss.document.parser.js";
   if (location.toString().indexOf('//localhost:8080') > -1) {
     return module.exports.load(protocol + "//localhost:8080/node_modules/gss-document/dist/gss.document.parser.js", callback, function() {
       return module.exports.load(url, callback);
