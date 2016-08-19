@@ -1,20 +1,4 @@
-name: TomAnderson
-favicon: null
-layout_spectrum: 1
 typography_spectrum: 0.88716
-title: Tom Anderson
-cta:
-  domain: null
-  bucket: null
-  version: null
-analytics:
-  google: UA-69607934-1
-  facebook: null
-  twitter: null
-opengraph:
-  image: null
-  type: null
-  appId: null
 color:
   brandColors:
     - '#fafffe'
@@ -26,4 +10,21 @@ color:
   lightness: 0.5625
   saturation: 0.3125
   rhythmicContrast: 1
+opengraph:
+  image: null
+  type: null
+  appId: null
+layout_spectrum: 1
+analytics:
+  google: UA-69607934-1
+  facebook: null
+  twitter: null
+name: TomAnderson
+cta:
+  domain: null
+  bucket: null
+  version: null
+favicon: null
+title: Tom Anderson
+description: Excellency
 purpose: []
